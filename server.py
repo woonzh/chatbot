@@ -22,6 +22,14 @@ CORS(app)
 def hello():
     return render_template('index.html')
 
+@app.route('/trump')
+def trump():
+    return render_template('trump.html')
+
+@app.route('/mobile')
+def mobile():
+    return render_template('mobile.html')
+
 @app.route('/query', methods=['GET', 'OPTIONS'])
 def passwordcheck():
     if request.method == 'GET':
@@ -36,4 +44,5 @@ def passwordcheck():
         return resp
     
 if __name__ == '__main__':
+#     app.run(debug=True, host='0.0.0.0', port=5000)
      app.run(debug=True, host='localhost', port=5000)

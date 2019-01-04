@@ -1,0 +1,93 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
+</head>
+
+<body>
+	<div class="container-fluid h-100">
+		<div class="row">
+			<label class="switch">
+					<input type="checkbox">
+					<span class="slider round" onclick="toggleOnClick()"></span>
+			</label>
+			<p class="label"><b>Avatar Toggle</b></p>
+		</div>
+		<div class="row justify-content-center h-100">
+			<div class="col-md-4 col-xl-6 chat" id="avatar" style="display:block">
+				<!--<div class="card mb-sm-3 mb-md-0 contacts_card">
+
+				</div>-->
+				<script type="text/javascript" src="//vhss-d.oddcast.com/vhost_embed_functions_v2.php?acc=6876649&js=1"></script>
+				<script type="text/javascript">AC_VHost_Embed(6876649,450,600,'',2,1, 2638851, 0,1,0,'f33f7c13e5b0846c70b93455dbf56453',0);</script>
+			</div>
+			<div class="col-md-8 col-xl-6 chat">
+				<div class="card">
+					<div class="card-header msg_head">
+						<div class="d-flex bd-highlight">
+							<div class="img_cont">
+								<img src="{{ url_for('static', filename='images/face.png')}}" class="rounded-circle user_img">
+								<span class="online_icon"></span>
+							</div>
+							<div class="user_info">
+								<span>Chat with Telstra</span>
+							</div>
+						</div>
+					</div>
+					<div class="card-body msg_card_body" id="body">
+						<div class="d-flex justify-content-start mb-4" id="bot_template">
+							<div class="img_cont_msg">
+								<img src="{{ url_for('static', filename='images/face.png')}}" class="rounded-circle user_img_msg" >
+							</div>
+							<div class="msg_cotainer">
+								Hi, how may i help you?
+							</div>
+						</div>
+						<div class="d-flex justify-content-end mb-4" id="human_template">
+							<div class="msg_cotainer_send">
+								Your message will appear here.
+							</div>
+							<div class="img_cont_msg">
+								<img src="{{ url_for('static', filename='images/face.png')}}" class="rounded-circle user_img_msg">
+							</div>
+						</div>
+						
+					</div>
+					<div class="card-footer">
+						<div class="input-group">
+							<input name="" class="form-control type_msg" placeholder="Type your message..." id="msg"></input>
+							<div>
+								<span class="input-group-text" onclick="micClicked()"><img src="{{ url_for('static', filename='images/microphone-inactive.png')}}" class="microphone" id="mic" name="inactive"></span>
+							</div>
+							<div class="input-group-append">
+								<span class="input-group-text send_btn" onclick="msgReceived()"><i class="fas fa-location-arrow"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	<script src="{{ url_for('static', filename='js/index.js')}}"></script>
+	<!--<script type="text/javascript" src="//vhss-d.oddcast.com/vhost_embed_functions_v2.php?acc=6876649&js=1"></script>
+	<script type="text/javascript">AC_VHost_Embed(6876649,300,400,'',1,1, 2638858, 0,1,0,'384be2210919d579d6d8f5cc0d53e9f3',0);</script>
+	<form name="myForm" class="form">
+		<li>Letting the user enter the text in a form: <br>
+		<input type="text" name="textToSay" size="20" class="form">
+			<input type="button" value="Say It!" name="SayButton" onclick="javascript:sayText(myForm.textToSay.value,3,1,3)" class="form">
+		</li>
+	</form>-->
+
+</body>
+</html>
